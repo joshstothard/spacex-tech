@@ -2,7 +2,7 @@ import { gql, useQuery } from '@apollo/client';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
-/* Pebble - limit the number of launches to 5 */ 
+/* Pebble - limit the number of launches to 10 */ 
 const GET_LAUNCHES = gql`
   query GetLaunches {
     launches(limit: 5) { 
